@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A962054249B6AC500340A0A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962053249B6AC500340A0A /* CardView.swift */; };
+		7A962056249B6CB000340A0A /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962055249B6CB000340A0A /* Indicator.swift */; };
 		7AFC92D7249B363E00A8B933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC92D6249B363E00A8B933 /* AppDelegate.swift */; };
 		7AFC92D9249B363E00A8B933 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC92D8249B363E00A8B933 /* SceneDelegate.swift */; };
 		7AFC92DB249B363E00A8B933 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC92DA249B363E00A8B933 /* ContentView.swift */; };
@@ -16,9 +18,12 @@
 		7AFC92EC249B372A00A8B933 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7AFC92EB249B372A00A8B933 /* SDWebImageSwiftUI */; };
 		7AFC92F1249B37B400A8B933 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC92F0249B37B400A8B933 /* HomeView.swift */; };
 		7AFC92F3249B383800A8B933 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC92F2249B383800A8B933 /* Account.swift */; };
+		7AFC92F5249B3E8500A8B933 /* FetchAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFC92F4249B3E8500A8B933 /* FetchAccounts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A962053249B6AC500340A0A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7A962055249B6CB000340A0A /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		7AFC92D3249B363E00A8B933 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFC92D6249B363E00A8B933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFC92D8249B363E00A8B933 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +34,7 @@
 		7AFC92E4249B364100A8B933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFC92F0249B37B400A8B933 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7AFC92F2249B383800A8B933 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		7AFC92F4249B3E8500A8B933 /* FetchAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAccounts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		7AFC92ED249B378100A8B933 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7AFC92F4249B3E8500A8B933 /* FetchAccounts.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -95,6 +102,8 @@
 			children = (
 				7AFC92DA249B363E00A8B933 /* ContentView.swift */,
 				7AFC92F0249B37B400A8B933 /* HomeView.swift */,
+				7A962053249B6AC500340A0A /* CardView.swift */,
+				7A962055249B6CB000340A0A /* Indicator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,11 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A962054249B6AC500340A0A /* CardView.swift in Sources */,
 				7AFC92F3249B383800A8B933 /* Account.swift in Sources */,
 				7AFC92D7249B363E00A8B933 /* AppDelegate.swift in Sources */,
 				7AFC92F1249B37B400A8B933 /* HomeView.swift in Sources */,
 				7AFC92D9249B363E00A8B933 /* SceneDelegate.swift in Sources */,
+				7AFC92F5249B3E8500A8B933 /* FetchAccounts.swift in Sources */,
 				7AFC92DB249B363E00A8B933 /* ContentView.swift in Sources */,
+				7A962056249B6CB000340A0A /* Indicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YamadaShuya.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YamadaShuya.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
